@@ -1,0 +1,133 @@
+.validation{
+    background-repeat:repeat ;
+    background-size: cover; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color:white;
+    padding:0px;
+    z-index: 999;
+    background-color: black;
+}
+
+.validation  span.number {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-weight: 200;
+
+}
+.validation .content {
+    width: 100%;
+    margin: auto;
+    padding-top: 10%;
+    transition: .3s;
+
+}
+.validation .content span {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+.validation .content h1 {
+    font-weight: 300;
+    margin: 10px 0 0;
+    padding: 20px;
+    font-size: 28px;
+    width: 200px;
+    text-align: left;
+}
+.validation .content strong {
+    font-weight: 300;
+}
+.validation .content img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+     transition: .3s;
+         max-width: 90px;
+
+}
+.validation .content p{
+    font-size: 16px;
+    width: 180px;
+    font-weight: 200;
+    padding: 0px 20px;
+    margin: 0px;
+}
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color:black !important;
+    color: fieldtext !important;
+}
+.validation form {
+    width: 85%;
+    margin: 0px auto;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+form img {
+    margin-top: 15px;
+    position: absolute;
+    z-index: 99;
+    width: 14px;
+    left: 14px;
+}select:invalid { color: red; }
+.validation button {
+    
+    border-radius: 40px;
+    position: relative;
+    width: 190px;
+    margin: 15px auto;
+    display: block;
+    background-color: #4CE29E;
+    color: black;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    font-weight: bold;
+}
+.validation button img {
+    left: inherit;
+    right: inherit;
+    margin: 0;
+    padding: 1px 3px;
+}
+
+
+@media(max-height:590px){
+    .validation .content {
+     transition: .3s;
+        padding-top: 20px;
+    }
+
+    .validation .content img {
+        transition: .3s;
+     
+        width: 150px;
+    }
+    .socialmedia {
+        display: none;
+    }
+    .validation .content h1 {
+   
+        display: none;
+
+        
+    }
+}
+
+@media(max-height:700px){
+    .validation p{
+        display:none;
+    }
+    .validation .content h1 {
+   
+    margin: 0px 0 0;
+    
+}
+}
